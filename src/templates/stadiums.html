@@ -1,34 +1,25 @@
 <html>
 <head>
-	<title>English Premier League</title>
+	<title>Stadiums</title>
 	<link type="text/css" rel="stylesheet "href="{{ url_for('static', filename='style.css')}}" />
 	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
 </head>
 <body>
 <!-- Header section-->
 	<header>
-		<a href="{{ url_for('index') }}"><img src="static/images/premier-league-logo.png" alt="Premier league logo." /></a>
+		<a href="{{ url_for('index') }}"><img src="http://localhost:5000/static/images/premier-league-logo.png" alt="Premier league logo." /></a>
 		<a href="{{ url_for('index') }}"><h1>English Premier League</h1></a>
 		<div class="navigation">
 			<ul>
 				<a href="{{ url_for('teams') }}"><li>Teams</li></a>
-				<a href="{{ url_for('stadiums') }}"><li>Stadiums</li></a>
+				<a href="{{ url_for('stadiums') }}"><li class="active">Stadiums</li></a>
 				<a href="{{ url_for('table') }}"><li>Table</li></a>
 				<a href="{{ url_for('rankings') }}"><li>Rankings</li></a>
 			</ul>
 		</div>
 	</header>
-<!--Jumbotron image-->	
-	<div class="home-img">
-		<img src="static/images/champions-jumbotron.png" alt="Leicester city champions." />
-	</div>
-<!--Home sections-->	
-	<div class="home-sections">
-		<img src="static/images/teams-home.png" alt="Teams section." />
-		<img src="static/images/stadiums-home.png" alt="Stadiums section." />
-		<img src="static/images/rankings-home.png" alt="Rankings section." />
-		<img src="static/images/table-home.png" alt="Table section." />
-	</div>
+<!--Content-->	
+	<h1>Stadiums</h1>
 <!--Footer-->
 	<footer>
 		<ul>
@@ -37,7 +28,7 @@
 			<a href="{{ url_for('table') }}"><li>Table</li></a>
 			<a href="{{ url_for('rankings') }}"><li>Rankings</li></a>
 		</ul>
-		<img src="static/images/line.png" alt="Line." />
+		<img src="http://localhost:5000/static/images/line.png" alt="Line." />
 		<p>&copy; Marcin Augustyn. All rights reserved. 2016</p>
 	</footer>
 </body>

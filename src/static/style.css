@@ -68,6 +68,9 @@ h3{
 	font-size:20px;
 	font-weight:0;
 }
+.active{
+	color:#0a48c6;
+}
 header{
 	text-align:center;
 }
@@ -127,4 +130,6 @@ footer p{
 }
 footer img{
 	opacity:0.5;
+	max-width:100%;
+	max-height:100%;
 }
