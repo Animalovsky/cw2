@@ -57,19 +57,25 @@ body{
 	color:#3d195b;
 }
 h1{
-	font-size:44px;
+	font-size:36px;
 	font-weight:0;
 }
 h2{
-	font-size:30px;
+	font-size:28px;
 	font-weight:0;
 }
 h3{
-	font-size:20px;
+	font-size:18px;
 	font-weight:0;
 }
 .active{
 	color:#0a48c6;
+}
+.heading{
+	text-align:center;
+	background-color:#96ffca;
+	padding-top:20px;
+	padding-bottom:20px;
 }
 header{
 	text-align:center;
@@ -90,7 +96,7 @@ header h1{
 	list-style:none;
 	padding-top:15px;
 	padding-bottom:15px;
-	font-size:25px;
+	font-size:20px;
 }
 .navigation ul li{
 	text-decoration:none;
@@ -103,14 +109,79 @@ header h1{
 }
 .home-sections img{
 	float:left;
+	margin:2.5%;
 	width:45%;
+}
+.team{
+	width:15%;
 	padding:2.5%;
+	text-align:center;
+	float:left;
+}
+.team h3{
+	margin-top:20px;
+}
+.clear{
+	clear:both;
+	padding-bottom:150px;
+}
+.team img{
+	width:80%;
+}
+html { height: 100%; }
+body {
+    min-height:100%; 
+    position:relative; 
+    padding-bottom:[footer-height] 
+}
+.team-section1{
+	width:33%;
+	text-align:right;
+	float:left;
+	margin-top:150px;
+	line-height:3;
+}
+.team-section2{
+	width:33%;
+	text-align:center;
+	float:left;
+}
+.team-section2 img{
+	max-width:60%;
+	min-width:40%;
+}
+.team-section3{
+	width:33%;
+	text-align:left;
+	float:left;
+	margin-top:150px;
+	line-height:3;
+}
+.team-section3 a{
+	color:#5b0f99;
+}
+.about{
+	clear:both;
+	text-align:left;
+	line-height:2;
+	width:70%;
+	margin-left:15%;
+	margin-right:15%;
+	padding-bottom:50px;
+}
+.kit{
+	float:left;
+	width:33%;
+	text-align:center;
 }
 footer{
 	background-color:#37fa97;
 	text-align:center;
 	padding:20px;
 	clear:both;
+	position: absolute; 
+    left: 0 ; right: 0; bottom: 0; 
+    height:[footer-height];
 }
 footer ul{
 	list-style:none;

@@ -24,11 +24,12 @@
 	</div>
 <!--Home sections-->	
 	<div class="home-sections">
-		<img src="static/images/teams-home.png" alt="Teams section." />
-		<img src="static/images/stadiums-home.png" alt="Stadiums section." />
-		<img src="static/images/rankings-home.png" alt="Rankings section." />
-		<img src="static/images/table-home.png" alt="Table section." />
+		<a href="{{ url_for('teams') }}"><img src="static/images/teams-home.png" alt="Teams section." /></a>
+		<a href="{{ url_for('stadiums') }}"><img src="static/images/stadiums-home.png" alt="Stadiums section." /></a>
+		<a href="{{ url_for('rankings') }}"><img src="static/images/rankings-home.png" alt="Rankings section." /></a>
+		<a href="{{ url_for('table') }}"><img src="static/images/table-home.png" alt="Table section." /></a>
 	</div>
+	<div class="clear"></div>
 <!--Footer-->
 	<footer>
 		<ul>

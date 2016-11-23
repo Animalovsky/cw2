@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Teams</title>
+	<title>{{ team_name }}</title>
 	<link type="text/css" rel="stylesheet "href="{{ url_for('static', filename='style.css')}}" />
 	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
 </head>
@@ -11,27 +11,46 @@
 		<a href="{{ url_for('index') }}"><h1>English Premier League</h1></a>
 		<div class="navigation">
 			<ul>
-				<a href="{{ url_for('teams') }}"><li class="active">Teams</li></a>
+				<a href="{{ url_for('teams') }}"><li>Teams</li></a>
 				<a href="{{ url_for('stadiums') }}"><li>Stadiums</li></a>
 				<a href="{{ url_for('table') }}"><li>Table</li></a>
 				<a href="{{ url_for('rankings') }}"><li>Rankings</li></a>
 			</ul>
 		</div>
 	</header>
-<!--Content-->	
+<!--Heading-->	
 	<div class="heading">
-		<h1>Teams</h1>
+		<h1>{{ team_name }}</h1>
 	</div>
-<!--This loop display artists-->
-	{% for data in results %}
-
-		<div class="team">
-			<a href=/{{ data.team_name }}><img src="{{ data.img_badge }}" /></a>
-			<h3><a href=/{{ data.team_name }}>{{ data.team_name }}</a></h3>
+	
+<!--This loop displays team information-->
+	{% for team in team if team.team_name == team_name %}
+		<div class="team-section1">
+			<h3>FULL NAME: {{ team.full_name }}</h3>
+			<h3>NICKNAME: {{ team.nickname }}</h3>
+			<h3>YEAR FOUNDED: {{ team.founded }}</h3>
+		</div>	
+		<div class="team-section2">
+			<img src="{{ team.img_badge }}" />
+		</div>
+		<div class="team-section3">
+			<h3>OWNER: {{ team.owner }}</h3>
+			<h3>STADIUM: <a href=/{{ team.team_name }}/{{ team.stadium_name }}>{{ team.stadium_name }}</a></h3>
+			<h3>Manager: {{ team.manager }}</h3>
 		</div>
 	{% endfor %}
+	
+<!--This loop displays team about information-->	
+	<div class="about">
+		<h2></h2>
+		{% for team in team if team.team_name == team_name %}
+			<p>{{ team.bio }}</p>
+		{% endfor %}
+
+<!--Clear divs with float-->		
 	<div class="clear"></div>
-<!--Footer-->
+	
+<!--Footer-->	
 	<footer>
 		<ul>
 			<a href="{{ url_for('teams') }}"><li>Teams</li></a>
