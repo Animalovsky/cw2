@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>{{ stadium_name }}</title>
+	<link type="text/css" rel="stylesheet "href="{{ url_for('static', filename='style.css')}}" />
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+</head>
+<body>
+<!-- Header section-->
+	<header>
+		<a href="{{ url_for('index') }}"><img src="http://localhost:5000/static/images/premier-league-logo.png" alt="Premier league logo." /></a>
+		<a href="{{ url_for('index') }}"><h1>English Premier League</h1></a>
+		<div class="navigation">
+			<ul>
+				<a href="{{ url_for('teams') }}"><li>Teams</li></a>
+				<a href="{{ url_for('stadiums') }}"><li>Stadiums</li></a>
+				<a href="{{ url_for('table') }}"><li>Table</li></a>
+				<a href="{{ url_for('rankings') }}"><li>Rankings</li></a>
+			</ul>
+		</div>
+	</header>
+<!--Content-->	
+	<div class="heading">
+		<h1>{{ stadium_name }}</h1>
+	</div>
+		{% for stadium in stadium if stadium.stadium_name == stadium_name %}
+		<p>{{ stadium.stadium_name}}</p>
+			<p>{{ stadium.capacity }}</p>
+			<p>{{ stadium.year_built }}</p>
+			<p>{{ stadium.owner }}</p>
+			<p>{{ stadium.location }}</p>
+		{% endfor %}
+	<footer>
+		<ul>
+			<a href="{{ url_for('teams') }}"><li>Teams</li></a>
+			<a href="{{ url_for('stadiums') }}"><li>Stadiums</li></a>
+			<a href="{{ url_for('table') }}"><li>Table</li></a>
+			<a href="{{ url_for('rankings') }}"><li>Rankings</li></a>
+		</ul>
+		<img src="http://localhost:5000/static/images/line.png" alt="Line." />
+		<p>&copy; Marcin Augustyn. All rights reserved. 2016</p>
+	</footer>
+</body>
+</html>

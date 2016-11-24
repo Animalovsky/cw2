@@ -1,0 +1,163 @@
+[
+   {
+      "team_name":"AFCBournemouth",
+	  "stadium_name":"DeanCourt",
+	  "year_built":"1910",
+	  "owner":"Structadene",
+	  "location":"Kings Park - Bournemouth",
+	  "capacity":"11,464"
+   },
+   {
+      "team_name":"Arsenal",
+	  "stadium_name":"EmiratesStadium",
+	  "year_built":"2006",
+	  "owner":"Arsenal Holdings plc",
+	  "location":"Holloway - London",
+	  "capacity":"60,432"
+   },
+   {
+      "team_name":"Burnley",
+	  "stadium_name":"TurfMoor",
+	  "year_built":"1883",
+	  "owner":"Turf Moor Properties Ltd",
+	  "location":"Harry Potts Way - Burnley",
+	  "capacity":"21,401"
+   },
+    {
+      "team_name":"Chelsea",
+	  "stadium_name":"StamfordBridge",
+	  "year_built":"1876",
+	  "owner":"Chelsea Pitch Owners plc",
+	  "location":"Fullham - London",
+	  "capacity":"41,631"
+   },
+   {
+      "team_name":"CrystalPalace",
+	  "stadium_name":"SelhurstPark",
+	  "year_built":"1924",
+	  "owner":"CPFC 2010",
+	  "location":"South Norwood - London",
+	  "capacity":"25,456"
+   },
+   {
+      "team_name":"Everton",
+	  "stadium_name":"GoodisonPark",
+	  "year_built":"1892",
+	  "owner":"The Everton Football Club Company",
+	  "location":"Goodison Road, Walton - Liverpool",
+	  "capacity":"39,572"
+   },
+   {
+      "team_name":"HullCity",
+	  "stadium_name":"KCOMStadium",
+	  "year_built":"2001",
+	  "owner":"Hull City Council / KCOM",
+	  "location":"The Circle, Walton St - Hull",
+	  "capacity":"25,400"
+   },
+   {
+      "team_name":"LeicesterCity",
+	  "stadium_name":"KingPowerStadium",
+	  "year_built":"2002",
+	  "owner":"Leicester City F.C.",
+	  "location":"Filbert Way - Leicester",
+	  "capacity":"32,312"
+   },
+   {
+      "team_name":"Liverpool",
+	  "stadium_name":"Anfield",
+	  "year_built":"1884",
+	  "owner":"Fenway Sports Group",
+	  "location":"Anfield - Liverpool",
+	  "capacity":"54,074"
+   },
+   {
+      "team_name":"ManchesterCity",
+	  "stadium_name":"CityofManchesterStadium",
+	  "year_built":"2002",
+	  "owner":"Manchester City Council",
+	  "location":"Etihad Campus - Manchester",
+	  "capacity":"55097"
+   },
+   {
+      "team_name":"ManchesterUnited",
+	  "stadium_name":"OldTrafford",
+	  "year_built":"1909",
+	  "owner":"Sir Matt Busby Way - Old Trafford - Greater Manchester",
+	  "location":"Kings Park - Bournemouth",
+	  "capacity":"75,643"
+   },
+   {
+      "team_name":"Middlesbrough",
+	  "stadium_name":"RiversideStadium",
+	  "year_built":"1995",
+	  "owner":"Middlesbrough F.C.",
+	  "location":"Middlesbrough",
+	  "capacity":"33,746"
+   },
+   {
+      "team_name":"Southampton",
+	  "stadium_name":"StMary'sStadium",
+	  "year_built":"2001",
+	  "owner":"Southampton F.C.",
+	  "location":"Britannia Rd - Southampton",
+	  "capacity":"32,505"
+   },   
+   {
+      "team_name":"StokeCity",
+	  "stadium_name":"Bet365Stadium",
+	  "year_built":"1997",
+	  "owner":"Stoke City",
+	  "location":"Stanley Matthews Way - Stoke-on-Trent",
+	  "capacity":"27,902"
+   }, 
+   {
+      "team_name":"Sunderland",
+	  "stadium_name":"StadiumOfLight",
+	  "year_built":"1879",
+	  "owner":"Ellis Short",
+	  "location":"Sunderland",
+	  "capacity":"49,000"
+   }, 
+   {
+      "team_name":"SwanseaCity",
+	  "stadium_name":"LibertyStadium",
+	  "year_built":"2005",
+	  "owner":"Swansea Council",
+	  "location":"Normandy Road - Swansea",
+	  "capacity":"21,088"
+   }, 
+   {
+      "team_name":"Tottenham",
+	  "stadium_name":"WhiteHartLane",
+	  "year_built":"1898",
+	  "owner":"Tottenham Hotspur F.C.",
+	  "location":"Tottenham - London",
+	  "capacity":"36,284"
+   },   
+   {
+      "team_name":"Watford",
+	  "stadium_name":"VicarageRoad",
+	  "year_built":"1922",
+	  "owner":"Watford F.C.",
+	  "location":"Vicarage Road - Watford",
+	  "capacity":"21,577"
+   },
+   {
+      "team_name":"WestBromwichAlbion",
+	  "stadium_name":"TheHawthorns",
+	  "year_built":"1900",
+	  "owner":"West Bromwich Albion F.C.",
+	  "location":"Halfords Lane - West Bromwich",
+	  "capacity":"26,850"
+   },  
+   {
+      "team_name":"WestHamUnited",
+	  "stadium_name":"LondonStadium",
+	  "year_built":"2011",
+	  "owner":"Greater London Authority",
+	  "location":"Queen Elizabeth Olympic Park - Stratford London",
+	  "capacity":"60,000"
+   }   
+]
+
