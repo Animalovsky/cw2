@@ -19,7 +19,16 @@
 		</div>
 	</header>
 <!--Content-->	
-	<h1>Stadiums</h1>
+	<div class="heading">
+		<h1>Stadiums</h1>
+	</div>
+	
+<!--This loop display artists-->
+	{% for item in results %}
+		<div class="team">
+			<p><a href=/{{ item.team_name }}/{{ item.stadium_name }}>{{ item.stadium_name }}</a></p>
+		</div>
+	{% endfor %}
 <!--Footer-->
 	<footer>
 		<ul>

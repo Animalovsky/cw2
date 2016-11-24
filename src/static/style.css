@@ -204,3 +204,46 @@ footer img{
 	max-width:100%;
 	max-height:100%;
 }
+.numbers {
+	text-align:center;
+}
+table {
+    border-collapse: collapse;
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;
+}
+
+td, th{
+    border: 2px solid #dddddd;
+    text-align: ;
+    padding: 10px;
+}
+.position tr td {
+    background: red;
+}
+tr:nth-child(2) {
+    background-color: #96ccff;
+}
+tr:nth-child(3) {
+    background-color: #96ccff;
+}
+tr:nth-child(4) {
+    background-color: #96ccff;
+}
+tr:nth-child(5) {
+    background-color: #9d96ff;
+}
+tr:nth-child(6) {
+    background-color: #fff696;
+}
+tr:nth-child(19) {
+    background-color: #f0a8a8;
+}
+tr:nth-child(20) {
+    background-color: #f0a8a8;
+}
+tr:nth-child(21) {
+    background-color: #f0a8a8;
+}

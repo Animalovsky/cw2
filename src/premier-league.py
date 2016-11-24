@@ -48,7 +48,9 @@ def rankings():
 # This is a table route.
 @app.route('/table/')
 def table():
-    return render_template("table.html")
+    json_data=open('static/table.json').read()
+    data= json.loads(json_data)
+    return render_template("table.html", results=data)
 		
 if __name__  == "__main__":
 	app.run(host='0.0.0.0 ', debug=True)

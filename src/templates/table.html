@@ -19,7 +19,40 @@
 		</div>
 	</header>
 <!--Content-->	
-	<h1>Premier League Table 16/17 Season</h1>
+	<div class="heading">
+		<h1>Premier League Table 16/17 Season</h1>
+	</div>
+
+<!--Premier league Table-->
+	<table>
+	<tr>
+		<th>#</th>
+		<th>TEAM</th>
+		<th>P</th>
+		<th>W</th>
+		<th>D</th>
+		<th>L</th>
+		<th>F</th>
+		<th>A</th>
+		<th>GD</th>
+		<th>PTS</th>
+	</tr>
+		{% for item in results|sort(attribute='position', reverse=False) %}
+		<tr>
+			<td class="numbers">{{ item.position }}</td>
+			<td><a href=/{{ item.team_name }}>{{ item.full_name }}</a></td>
+			<td>12</td>
+			<td class="numbers">{{ item.w }}</td>
+			<td class="numbers">{{ item.d }}</td>
+			<td class="numbers">{{ item.l }}</td>
+			<td class="numbers">{{ item.f }}</td>
+			<td class="numbers">{{ item.a }}</td>
+			<td class="numbers">{{ item.gd }}</td>
+			<td class="numbers">{{ item.pts }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	<div class="clear"></div>
 <!--Footer-->
 	<footer>
 		<ul>
