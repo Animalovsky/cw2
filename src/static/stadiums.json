@@ -1,163 +1,303 @@
 [
    {
       "team_name":"AFCBournemouth",
+	  "full_name":"AFC Bournemouth",
+	  "stadium_full_name":"Dean Court",
 	  "stadium_name":"DeanCourt",
 	  "year_built":"1910",
 	  "owner":"Structadene",
 	  "location":"Kings Park - Bournemouth",
-	  "capacity":"11,464"
+	  "capacity":"11,464",
+	  "img_mini":"http://localhost:5000/static/images/brn-mini.png",
+	  "img_1":"http://localhost:5000/static/images/brn-1.png",
+	  "img_2":"http://localhost:5000/static/images/brn-2.png",
+	  "img_3":"http://localhost:5000/static/images/brn-3.png",
+	  "img_4":"http://localhost:5000/static/images/brn-4.png"
    },
    {
       "team_name":"Arsenal",
+	  "full_name":"Arsenal Football Club",
+	  "stadium_full_name":"Emirates Stadium",
 	  "stadium_name":"EmiratesStadium",
 	  "year_built":"2006",
 	  "owner":"Arsenal Holdings plc",
 	  "location":"Holloway - London",
-	  "capacity":"60,432"
+	  "capacity":"60,432",
+	  "img_mini":"http://localhost:5000/static/images/ars-mini.png",
+	  "img_1":"http://localhost:5000/static/images/ars-1.png",
+	  "img_2":"http://localhost:5000/static/images/ars-2.png",
+	  "img_3":"http://localhost:5000/static/images/ars-3.png",
+	  "img_4":"http://localhost:5000/static/images/ars-4.png"
    },
    {
       "team_name":"Burnley",
+	  "full_name":"Burnley Football Club",
+	  "stadium_full_name":"Turf Moor",
 	  "stadium_name":"TurfMoor",
 	  "year_built":"1883",
 	  "owner":"Turf Moor Properties Ltd",
 	  "location":"Harry Potts Way - Burnley",
-	  "capacity":"21,401"
+	  "capacity":"21,401",
+	  "img_mini":"http://localhost:5000/static/images/turfmoor-mini.png",
+	  "img_1":"http://localhost:5000/static/images/turfmoor-1.png",
+	  "img_2":"http://localhost:5000/static/images/turfmoor-2.png",
+	  "img_3":"http://localhost:5000/static/images/turfmoor-3.png",
+	  "img_4":"http://localhost:5000/static/images/turfmoor-4.png"
    },
     {
       "team_name":"Chelsea",
+	  "full_name":"Chelsea Football Club",
+	  "stadium_full_name":"Stamford Bridge",
 	  "stadium_name":"StamfordBridge",
 	  "year_built":"1876",
 	  "owner":"Chelsea Pitch Owners plc",
 	  "location":"Fullham - London",
-	  "capacity":"41,631"
+	  "capacity":"41,631",
+	  "img_mini":"http://localhost:5000/static/images/stamfordb-mini.png",
+	  "img_1":"http://localhost:5000/static/images/stamfordb-1.png",
+	  "img_2":"http://localhost:5000/static/images/stamfordb-2.png",
+	  "img_3":"http://localhost:5000/static/images/stamfordb-4.png",
+	  "img_4":"http://localhost:5000/static/images/stamfordb-3.png"
    },
    {
       "team_name":"CrystalPalace",
+	  "full_name":"Crystal Palace Football Club",
+	  "stadium_full_name":"Selhurst Park",
 	  "stadium_name":"SelhurstPark",
 	  "year_built":"1924",
 	  "owner":"CPFC 2010",
 	  "location":"South Norwood - London",
-	  "capacity":"25,456"
+	  "capacity":"25,456",
+	  "img_mini":"http://localhost:5000/static/images/sp-mini.png",
+	  "img_1":"http://localhost:5000/static/images/sp-1.png",
+	  "img_2":"http://localhost:5000/static/images/sp-2.png",
+	  "img_3":"http://localhost:5000/static/images/sp-3.png",
+	  "img_4":"http://localhost:5000/static/images/sp-4.png"
    },
    {
       "team_name":"Everton",
+      "full_name":"Everton Football Club",
+	  "stadium_full_name":"Goodison Park",
 	  "stadium_name":"GoodisonPark",
 	  "year_built":"1892",
 	  "owner":"The Everton Football Club Company",
 	  "location":"Goodison Road, Walton - Liverpool",
-	  "capacity":"39,572"
+	  "capacity":"39,572",
+	  "img_mini":"http://localhost:5000/static/images/eve-mini.png",
+	  "img_1":"http://localhost:5000/static/images/eve-1.png",
+	  "img_2":"http://localhost:5000/static/images/eve-2.png",
+	  "img_3":"http://localhost:5000/static/images/eve-3.png",
+	  "img_4":"http://localhost:5000/static/images/eve-4.png"
    },
    {
       "team_name":"HullCity",
+      "full_name":"Hull City Association Football Club",
+	  "stadium_full_name":"KCOM Stadium",
 	  "stadium_name":"KCOMStadium",
 	  "year_built":"2001",
 	  "owner":"Hull City Council / KCOM",
 	  "location":"The Circle, Walton St - Hull",
-	  "capacity":"25,400"
+	  "capacity":"25,400",
+	  "img_mini":"http://localhost:5000/static/images/hull-mini.png",
+	  "img_1":"http://localhost:5000/static/images/hull-1.png",
+	  "img_2":"http://localhost:5000/static/images/hull-2.png",
+	  "img_3":"http://localhost:5000/static/images/hull-3.png",
+	  "img_4":"http://localhost:5000/static/images/hull-4.png"
    },
    {
       "team_name":"LeicesterCity",
+	  "full_name":"Leicester City Football Club",
+	  "stadium_full_name":"King Power Stadium",
 	  "stadium_name":"KingPowerStadium",
 	  "year_built":"2002",
 	  "owner":"Leicester City F.C.",
 	  "location":"Filbert Way - Leicester",
-	  "capacity":"32,312"
+	  "capacity":"32,312",
+	  "img_mini":"http://localhost:5000/static/images/lester-mini.png",
+	  "img_1":"http://localhost:5000/static/images/lester-1.png",
+	  "img_2":"http://localhost:5000/static/images/lester-2.png",
+	  "img_3":"http://localhost:5000/static/images/lester-3.png",
+	  "img_4":"http://localhost:5000/static/images/lester-4.png"
    },
    {
       "team_name":"Liverpool",
+	  "full_name":"Liverpool Football Club",
+	  "stadium_full_name":"Anfield",
 	  "stadium_name":"Anfield",
 	  "year_built":"1884",
 	  "owner":"Fenway Sports Group",
 	  "location":"Anfield - Liverpool",
-	  "capacity":"54,074"
+	  "capacity":"54,074",
+	  "img_mini":"http://localhost:5000/static/images/anfield-mini.png",
+	  "img_1":"http://localhost:5000/static/images/anfield-4.png",
+	  "img_2":"http://localhost:5000/static/images/anfield-1.png",
+	  "img_3":"http://localhost:5000/static/images/anfield-2.png",
+	  "img_4":"http://localhost:5000/static/images/anfield-3.png"
    },
    {
       "team_name":"ManchesterCity",
+	  "full_name":"Manchester City Football Club",
+	  "stadium_full_name":"City Of Manchester Stadium",
 	  "stadium_name":"CityofManchesterStadium",
 	  "year_built":"2002",
 	  "owner":"Manchester City Council",
 	  "location":"Etihad Campus - Manchester",
-	  "capacity":"55097"
+	  "capacity":"55097",
+	  "img_mini":"http://localhost:5000/static/images/city-mini.png",
+	  "img_1":"http://localhost:5000/static/images/city-1.png",
+	  "img_2":"http://localhost:5000/static/images/city-2.png",
+	  "img_3":"http://localhost:5000/static/images/city-3.png",
+	  "img_4":"http://localhost:5000/static/images/city-4.png"
    },
    {
       "team_name":"ManchesterUnited",
+	  "full_name":"Manchester City Football Club",
+	  "stadium_full_name":"Old Trafford",
 	  "stadium_name":"OldTrafford",
 	  "year_built":"1909",
 	  "owner":"Sir Matt Busby Way - Old Trafford - Greater Manchester",
 	  "location":"Kings Park - Bournemouth",
-	  "capacity":"75,643"
+	  "capacity":"75,643",
+	  "img_mini":"http://localhost:5000/static/images/oldt-mini.png",
+	  "img_1":"http://localhost:5000/static/images/oldt-1.png",
+	  "img_2":"http://localhost:5000/static/images/oldt-2.png",
+	  "img_3":"http://localhost:5000/static/images/oldt-3.png",
+	  "img_4":"http://localhost:5000/static/images/oldt-4.png"
    },
    {
       "team_name":"Middlesbrough",
+	  "full_name":"Middlesbrough Football Club",
+	  "stadium_full_name":"Riverside Stadium",
 	  "stadium_name":"RiversideStadium",
 	  "year_built":"1995",
 	  "owner":"Middlesbrough F.C.",
 	  "location":"Middlesbrough",
-	  "capacity":"33,746"
+	  "capacity":"33,746",
+	  "img_mini":"http://localhost:5000/static/images/riverside-mini.png",
+	  "img_1":"http://localhost:5000/static/images/riverside-1.png",
+	  "img_2":"http://localhost:5000/static/images/riverside-2.png",
+	  "img_3":"http://localhost:5000/static/images/riverside-3.png",
+	  "img_4":"http://localhost:5000/static/images/riverside-4.png"
    },
    {
       "team_name":"Southampton",
+	  "full_name":"Southampton Football Club",
+	  "stadium_full_name":"St Mary's Stadium",
 	  "stadium_name":"StMary'sStadium",
 	  "year_built":"2001",
 	  "owner":"Southampton F.C.",
 	  "location":"Britannia Rd - Southampton",
-	  "capacity":"32,505"
+	  "capacity":"32,505",
+	  "img_mini":"http://localhost:5000/static/images/stmr-mini.png",
+	  "img_1":"http://localhost:5000/static/images/stmr-1.png",
+	  "img_2":"http://localhost:5000/static/images/stmr-2.png",
+	  "img_3":"http://localhost:5000/static/images/stmr-3.png",
+	  "img_4":"http://localhost:5000/static/images/stmr-4.png"
    },   
    {
       "team_name":"StokeCity",
+	  "full_name":"Stoke City Football Club",
+	  "stadium_full_name":"Bet 365 Stadium",
 	  "stadium_name":"Bet365Stadium",
 	  "year_built":"1997",
 	  "owner":"Stoke City",
 	  "location":"Stanley Matthews Way - Stoke-on-Trent",
-	  "capacity":"27,902"
+	  "capacity":"27,902",
+	  "img_mini":"http://localhost:5000/static/images/bet365-mini.png",
+	  "img_1":"http://localhost:5000/static/images/bet365-1.png",
+	  "img_2":"http://localhost:5000/static/images/bet365-2.png",
+	  "img_3":"http://localhost:5000/static/images/bet365-3.png",
+	  "img_4":"http://localhost:5000/static/images/bet365-4.png"
    }, 
    {
       "team_name":"Sunderland",
+	  "full_name":"Sunderland Association Football Club",
+	  "stadium_full_name":"Stadium Of Light",
 	  "stadium_name":"StadiumOfLight",
 	  "year_built":"1879",
 	  "owner":"Ellis Short",
 	  "location":"Sunderland",
-	  "capacity":"49,000"
+	  "capacity":"49,000",
+	  "img_mini":"http://localhost:5000/static/images/stadiuml-mini.png",
+	  "img_1":"http://localhost:5000/static/images/stadiuml-1.png",
+	  "img_2":"http://localhost:5000/static/images/stadiuml-2.png",
+	  "img_3":"http://localhost:5000/static/images/stadiuml-4.png",
+	  "img_4":"http://localhost:5000/static/images/stadiuml-3.png"
    }, 
    {
       "team_name":"SwanseaCity",
+	  "full_name":"Swansea City Association Football Club",
+	  "stadium_full_name":"Liberty Stadium",
 	  "stadium_name":"LibertyStadium",
 	  "year_built":"2005",
 	  "owner":"Swansea Council",
 	  "location":"Normandy Road - Swansea",
-	  "capacity":"21,088"
+	  "capacity":"21,088",
+	  "img_mini":"http://localhost:5000/static/images/swan-mini.png",
+	  "img_1":"http://localhost:5000/static/images/swan-1.png",
+	  "img_2":"http://localhost:5000/static/images/swan-2.png",
+	  "img_3":"http://localhost:5000/static/images/swan-3.png",
+	  "img_4":"http://localhost:5000/static/images/swan-4.png"
    }, 
    {
       "team_name":"Tottenham",
+	  "full_name":"Tottenham Hotspur Football Club",
+	  "stadium_full_name":"White Hart Lane",
 	  "stadium_name":"WhiteHartLane",
 	  "year_built":"1898",
 	  "owner":"Tottenham Hotspur F.C.",
 	  "location":"Tottenham - London",
-	  "capacity":"36,284"
+	  "capacity":"36,284",
+	  "img_mini":"http://localhost:5000/static/images/whl-mini.png",
+	  "img_1":"http://localhost:5000/static/images/whl-1.png",
+	  "img_2":"http://localhost:5000/static/images/whl-2.png",
+	  "img_3":"http://localhost:5000/static/images/whl-3.png",
+	  "img_4":"http://localhost:5000/static/images/whl-4.png"
    },   
    {
       "team_name":"Watford",
+	  "full_name":"Watford Football Club",
+	  "stadium_full_name":"Vicarage Road",
 	  "stadium_name":"VicarageRoad",
 	  "year_built":"1922",
 	  "owner":"Watford F.C.",
 	  "location":"Vicarage Road - Watford",
-	  "capacity":"21,577"
+	  "capacity":"21,577",
+	  "img_mini":"http://localhost:5000/static/images/vicarage-mini.png",
+	  "img_1":"http://localhost:5000/static/images/vicarage-1.png",
+	  "img_2":"http://localhost:5000/static/images/vicarage-2.png",
+	  "img_3":"http://localhost:5000/static/images/vicarage-3.png",
+	  "img_4":"http://localhost:5000/static/images/vicarage-4.png"
    },
    {
       "team_name":"WestBromwichAlbion",
+	  "full_name":"West Bromwich Albion Football Club",
+	  "stadium_full_name":"The Hawthorns",
 	  "stadium_name":"TheHawthorns",
 	  "year_built":"1900",
 	  "owner":"West Bromwich Albion F.C.",
 	  "location":"Halfords Lane - West Bromwich",
-	  "capacity":"26,850"
+	  "capacity":"26,850",
+	  "img_mini":"http://localhost:5000/static/images/hawthorns-mini.png",
+	  "img_1":"http://localhost:5000/static/images/hawthorns-1.png",
+	  "img_2":"http://localhost:5000/static/images/hawthorns-2.png",
+	  "img_3":"http://localhost:5000/static/images/hawthorns-3.png",
+	  "img_4":"http://localhost:5000/static/images/hawthorns-4.png"
    },  
    {
       "team_name":"WestHamUnited",
+	  "full_name":"West Ham United Football Club",
+	  "stadium_full_name":"London Stadium",
 	  "stadium_name":"LondonStadium",
 	  "year_built":"2011",
 	  "owner":"Greater London Authority",
 	  "location":"Queen Elizabeth Olympic Park - Stratford London",
-	  "capacity":"60,000"
+	  "capacity":"60,000",
+	  "img_mini":"http://localhost:5000/static/images/lnd-mini.png",
+	  "img_1":"http://localhost:5000/static/images/lnd-1.png",
+	  "img_2":"http://localhost:5000/static/images/lnd-2.png",
+	  "img_3":"http://localhost:5000/static/images/lnd-3.png",
+	  "img_4":"http://localhost:5000/static/images/lnd-4.png"
    }   
 ]
 

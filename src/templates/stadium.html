@@ -3,6 +3,7 @@
 	<title>{{ stadium_name }}</title>
 	<link type="text/css" rel="stylesheet "href="{{ url_for('static', filename='style.css')}}" />
 	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <!-- Header section-->
@@ -20,15 +21,42 @@
 	</header>
 <!--Content-->	
 	<div class="heading">
-		<h1>{{ stadium_name }}</h1>
-	</div>
-		{% for stadium in stadium if stadium.stadium_name == stadium_name %}
-		<p>{{ stadium.stadium_name}}</p>
-			<p>{{ stadium.capacity }}</p>
-			<p>{{ stadium.year_built }}</p>
-			<p>{{ stadium.owner }}</p>
-			<p>{{ stadium.location }}</p>
+	{% for stadium in stadium if stadium.stadium_name == stadium_name %}
+		<h1>{{ stadium.stadium_full_name }}</h1>
 		{% endfor %}
+	</div>
+	{% for stadium in stadium if stadium.stadium_name == stadium_name %}
+	  <!-- Responsive Images with Conditional Breakpoints -->
+	<section id="responsive-images-breakpoints">
+		<div class="container">
+			<img class="breakpoint" src="{{ stadium.img_1 }}" width="960" height="640" />
+			<img class="breakpoint" src="{{ stadium.img_2 }}" width="960" height="640" />
+			<img class="breakpoint" src="{{ stadium.img_3 }}" width="960" height="640" />
+			<img class="breakpoint" src="{{ stadium.img_4 }}" width="960" height="640" />
+		</div>
+	</section>
+			<div class="stadium-desc">
+				<h3>Team Name</h3>
+				<p>{{ stadium.full_name }}</p>
+			</div>
+			<div class="stadium-desc">
+				<h3>Capacity</h3>
+				<p>{{ stadium.capacity }}</p>
+			</div>
+			<div class="stadium-desc">
+				<h3>Year Built</h3>
+				<p>{{ stadium.year_built }}</p>
+			</div>
+			<div class="stadium-desc">
+				<h3>Stadium Owner</h3>
+				<p>{{ stadium.owner }}</p>
+			</div>
+			<div class="stadium-desc">
+				<h3>Stadium Location</h3>
+				<p>{{ stadium.location }}</p>
+			</div>
+	{% endfor %}
+	<div class="clear"></div>
 	<footer>
 		<ul>
 			<a href="{{ url_for('teams') }}"><li>Teams</li></a>

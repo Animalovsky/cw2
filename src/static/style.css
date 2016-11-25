@@ -160,6 +160,25 @@ body {
 .team-section3 a{
 	color:#5b0f99;
 }
+.stadium-mini{
+	width:20%;
+	padding:2.5%;
+	text-align:center;
+	float:left;
+	
+}
+.stadium-mini img{
+	width:80%;
+	margin-bottom:20px;
+}
+.stadium-desc{
+	width:20%;
+	float:left;
+	text-align:center;
+}
+.stadium-desc p{
+	color:#5b0f99;
+}
 .about{
 	clear:both;
 	text-align:left;
@@ -285,4 +304,26 @@ tr:nth-child(21) {
 	background:#f0a8a8;
 	margin-right:5px;
 	border: 2px solid #dddddd;
+}
+
+/* Basic Responsive Image */
+section img {
+  width: 100%;
+  height: auto;
+  margin-bottom:5px;
+}
+@media (min-width: 760px) { /* Four columns for large devices */
+  .breakpoint {
+    max-width: 24%;
+  }
+}
+/* Demo Page Styles: Layout */
+.container {
+  position: relative;
+  width: 96%;
+  margin: 0 auto;
+  text-align: center;
+}
+section {
+  margin: 20px auto;
 }

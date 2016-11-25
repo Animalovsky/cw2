@@ -24,11 +24,13 @@
 	</div>
 	
 <!--This loop display artists-->
-	{% for item in results %}
-		<div class="team">
-			<p><a href=/{{ item.team_name }}/{{ item.stadium_name }}>{{ item.stadium_name }}</a></p>
+	{% for item in results|sort(attribute='stadium_name' ,reverse=False) %}
+		<div class="stadium-mini">
+		<a href=/{{ item.team_name }}/{{ item.stadium_name }}><img src="{{ item.img_mini }}" /></a>
+			<p><a href=/{{ item.team_name }}/{{ item.stadium_name }}>{{ item.stadium_full_name }}</a></p>
 		</div>
 	{% endfor %}
+	<div class="clear"></div>
 <!--Footer-->
 	<footer>
 		<ul>
