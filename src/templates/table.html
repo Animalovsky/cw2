@@ -25,33 +25,47 @@
 
 <!--Premier league Table-->
 	<table>
-	<tr>
-		<th>#</th>
-		<th>TEAM</th>
-		<th>P</th>
-		<th>W</th>
-		<th>D</th>
-		<th>L</th>
-		<th>F</th>
-		<th>A</th>
-		<th>GD</th>
-		<th>PTS</th>
-	</tr>
-		{% for item in results|sort(attribute='position', reverse=False) %}
+	<!--Table Labels-->
 		<tr>
-			<td class="numbers">{{ item.position }}</td>
-			<td><a href=/{{ item.team_name }}>{{ item.full_name }}</a></td>
-			<td>12</td>
-			<td class="numbers">{{ item.w }}</td>
-			<td class="numbers">{{ item.d }}</td>
-			<td class="numbers">{{ item.l }}</td>
-			<td class="numbers">{{ item.f }}</td>
-			<td class="numbers">{{ item.a }}</td>
-			<td class="numbers">{{ item.gd }}</td>
-			<td class="numbers">{{ item.pts }}</td>
+			<th>#</th>
+			<th>TEAM</th>
+			<th>P</th>
+			<th>W</th>
+			<th>D</th>
+			<th>L</th>
+			<th>F</th>
+			<th>A</th>
+			<th>GD</th>
+			<th>PTS</th>
 		</tr>
+		<!--Looping through JSON data-->
+		{% for item in results|sort(attribute='position', reverse=False) %}
+			<tr>
+				<td class="numbers">{{ item.position }}</td>
+				<td><a href=/{{ item.team_name }}>{{ item.full_name }}</a></td>
+				<td>12</td>
+				<td class="numbers">{{ item.w }}</td>
+				<td class="numbers">{{ item.d }}</td>
+				<td class="numbers">{{ item.l }}</td>
+				<td class="numbers">{{ item.f }}</td>
+				<td class="numbers">{{ item.a }}</td>
+				<td class="numbers">{{ item.gd }}</td>
+				<td class="numbers">{{ item.pts }}</td>
+			</tr>
 		{% endfor %}
 	</table>
+	<div class="legend">
+		<p><div class="shape-cl"></div> Champions League</p>
+	</div>
+	<div class="legend">
+		<p><div class="shape-clq"></div> Champions League Qualification</p>
+	</div>
+	<div class="legend">
+		<p><div class="shape-eu"></div> Europa League</p>
+	</div>
+	<div class="legend">
+		<p><div class="shape-rlg"></div> Relegation</p>
+	</div>
 	<div class="clear"></div>
 <!--Footer-->
 	<footer>

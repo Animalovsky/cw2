@@ -247,3 +247,42 @@ tr:nth-child(20) {
 tr:nth-child(21) {
     background-color: #f0a8a8;
 }
+.legend {
+    border-collapse: collapse;
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+}
+.shape-cl{
+	width:20px;
+	height:20px;
+	float:left;
+	background:#96ccff;
+	margin-right:5px;
+	border: 2px solid #dddddd;
+}
+.shape-clq{
+	width:20px;
+	height:20px;
+	float:left;
+	background:#9d96ff;
+	margin-right:5px;
+	border: 2px solid #dddddd;
+}
+.shape-eu{
+	width:20px;
+	height:20px;
+	float:left;
+	background:#fff696;
+	margin-right:5px;
+	border: 2px solid #dddddd;
+}
+.shape-rlg{
+	width:20px;
+	height:20px;
+	float:left;
+	background:#f0a8a8;
+	margin-right:5px;
+	border: 2px solid #dddddd;
+}
