@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Page Not Found</title>
+	<link type="text/css" rel="stylesheet "href="{{ url_for('static', filename='style.css')}}" />
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+</head>
+<body>
+<!-- Header section-->
+	<header>
+		<a href="{{ url_for('index') }}"><img src="static/images/premier-league-logo.png" alt="Premier league logo." /></a>
+		<a href="{{ url_for('index') }}"><h1>English Premier League</h1></a>
+		<div class="navigation">
+			<ul>
+				<a href="{{ url_for('teams') }}"><li>Teams</li></a>
+				<a href="{{ url_for('stadiums') }}"><li>Stadiums</li></a>
+				<a href="{{ url_for('table') }}"><li>Table</li></a>
+				<a href="{{ url_for('rankings') }}"><li>Rankings</li></a>
+			</ul>
+		</div>
+	</header>
+<!--Error page message-->
+	<div class="error">
+		<h1>404</h1>
+		<h2>Looks like the page your looking for doesn't exist.</h2>
+		<h3><a href="{{ url_for('index') }}">Please return to home page.</a></h3>
+	</div>
+
+	<div class="clear"></div>
+<!--Footer-->
+	<footer>
+		<ul>
+			<a href="{{ url_for('teams') }}"><li>Teams</li></a>
+			<a href="{{ url_for('stadiums') }}"><li>Stadiums</li></a>
+			<a href="{{ url_for('table') }}"><li>Table</li></a>
+			<a href="{{ url_for('rankings') }}"><li>Rankings</li></a>
+		</ul>
+		<img src="static/images/line.png" alt="Line." />
+		<p>&copy; Marcin Augustyn. All rights reserved. 2016</p>
+	</footer>
+</body>
+</html>

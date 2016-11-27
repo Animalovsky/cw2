@@ -16,7 +16,7 @@ def teams():
     return render_template("teams.html", results=data)
 	
 # This is as single team route.
-@app.route('/<team_name>/')
+@app.route('/Team/<team_name>/')
 def team(team_name):
     json_data=open('static/data.json').read()
     team= json.loads(json_data)
@@ -37,8 +37,6 @@ def stadium(team_name, stadium_name):
     json_data=open('static/stadiums.json').read()
     stadium= json.loads(json_data)
     return render_template("stadium.html", stadium=stadium, stadium_name=stadium_name, team=team, team_name=team_name)
-		
-
 
 # This is a rankings route.
 @app.route('/rankings/')
@@ -51,6 +49,11 @@ def table():
     json_data=open('static/table.json').read()
     data= json.loads(json_data)
     return render_template("table.html", results=data)
+	
+# 404 - Error handling.	
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('404.html'), 404
 		
 if __name__  == "__main__":
 	app.run(host='0.0.0.0 ', debug=True)
