@@ -1,12 +1,15 @@
 from  flask  import  Flask , render_template, jsonify, json, url_for, redirect, request
-import urllib
-import urlparse
+import ConfigParser
+import logging
+
+from logging.handlers import RotatingFileHandler
 app = Flask(__name__)
 
 # This is an index route.
 @app.route('/')
 def index():
     return render_template("index.html")
+	
 
 # This is a teams route.
 @app.route('/teams/')
@@ -54,7 +57,36 @@ def table():
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('404.html'), 404
-		
-if __name__  == "__main__":
-	app.run(host='0.0.0.0 ', debug=True)
+	
+@app.route('/config/')
+def config():
+  str = []
+  str.append('Debug:'+app.config['DEBUG'])
+  str.append('port:'+app.config['port'])
+  str.append('url:'+app.config['url'])
+  str.append('ip_address:'+app.config['ip_address'])
+  return '\t'.join(str)
+
+def init(app):
+    config = ConfigParser.ConfigParser()
+    try:
+        config_location = "etc/defaults.cfg"
+        config.read(config_location)
+
+        app.config['DEBUG'] = config.get("config", "debug")
+        app.config['ip_address'] = config.get("config", "ip_address")
+
+        app.config['port'] = config.get("config", "port")
+        app.config['url'] = config.get("config", "url")
+    except:
+        print "Could not read configs from: ", config_location
+
+	
+if __name__ == '__main__':
+    init(app)
+    app.run(
+        host=app.config['ip_address'],
+        port=int (app.config['port']))
+
+	
 	
