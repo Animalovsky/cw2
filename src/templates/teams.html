@@ -22,12 +22,11 @@
 	<div class="heading">
 		<h1>Teams</h1>
 	</div>
-<!--This loop display artists-->
+<!--This loop display teams-->
 	{% for data in results %}
-
 		<div class="team">
 			<a href=/Team/{{ data.team_name }}><img src="{{ data.img_badge }}" /></a>
-			<h3><a href=/{{ data.team_name }}>{{ data.full_name }}</a></h3>
+			<p><a href=/{{ data.team_name }}>{{ data.full_name }}</a></p>
 		</div>
 	{% endfor %}
 	<div class="clear"></div>

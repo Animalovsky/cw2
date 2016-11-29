@@ -1,9 +1,10 @@
+/* Custom font */
 @font-face {
   font-family: 'PremierLeague';
   src:url('PremierLeague.ttf') format('truetype');
 }
 
-
+/* CSS reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,11 +51,15 @@ a{
 	text-decoration:none;
 	color:inherit;
 }
+/* General styles */
 body{
 	margin:0px;
 	background-color: #fff; 
 	font-family: 'PremierLeague';
 	color:#3d195b;
+	min-height:100%; 
+    position:relative; 
+    padding-bottom:[footer-height] 
 }
 h1{
 	font-size:36px;
@@ -68,6 +73,9 @@ h3{
 	font-size:18px;
 	font-weight:0;
 }
+html { 
+	height: 100%; 
+}
 .active{
 	color:#0a48c6;
 }
@@ -77,6 +85,11 @@ h3{
 	padding-top:20px;
 	padding-bottom:20px;
 }
+.clear{
+	clear:both;
+	padding-bottom:150px;
+}
+/* Header styles */
 header{
 	text-align:center;
 }
@@ -87,6 +100,7 @@ header img{
 header h1{
 	padding:10px;
 }
+/* Navigation styles */
 .navigation{
 	background-color:#37fa97;
 	width:100%;
@@ -104,6 +118,7 @@ header h1{
 	padding-left:10px;
 	padding-right:10px;
 }
+/* Section styles */
 .home-img img{
 	width:100%;
 }
@@ -118,21 +133,12 @@ header h1{
 	text-align:center;
 	float:left;
 }
-.team h3{
+.team p{
 	margin-top:20px;
-}
-.clear{
-	clear:both;
-	padding-bottom:150px;
+	height:20px;
 }
 .team img{
 	width:80%;
-}
-html { height: 100%; }
-body {
-    min-height:100%; 
-    position:relative; 
-    padding-bottom:[footer-height] 
 }
 .team-section1{
 	width:33%;
@@ -165,11 +171,13 @@ body {
 	padding:2.5%;
 	text-align:center;
 	float:left;
-	
 }
 .stadium-mini img{
 	width:80%;
 	margin-bottom:20px;
+}
+.stadium-mini p{
+	height:20px;
 }
 .stadium-desc{
 	width:20%;
@@ -188,11 +196,7 @@ body {
 	margin-right:15%;
 	padding-bottom:50px;
 }
-.kit{
-	float:left;
-	width:33%;
-	text-align:center;
-}
+/* Footer styles */
 footer{
 	background-color:#37fa97;
 	text-align:center;
@@ -223,6 +227,7 @@ footer img{
 	max-width:100%;
 	max-height:100%;
 }
+/* Table styles */
 .numbers {
 	text-align:center;
 }
@@ -305,6 +310,14 @@ td, th{
 	margin-right:5px;
 	border: 2px solid #dddddd;
 }
+.ranking{
+	padding-top:20px;
+	text-align:center;
+}
+.ranking-table{
+	text-align:center;
+}
+/* Error handling styles */
 .error{
 	padding-top:;
 	text-align:center;
@@ -324,31 +337,99 @@ td, th{
 .error img{
 	width:10%;
 }
-.ranking{
-	padding-top:20px;
-	text-align:center;
-}
-.ranking-table{
-	text-align:center;
-}
-/* Basic Responsive Image */
+/* Stadium images styles */
 section img {
-  width: 100%;
-  height: auto;
-  margin-bottom:5px;
-}
-@media (min-width: 760px) { /* Four columns for large devices */
-  .breakpoint {
-    max-width: 24%;
-  }
+	width: 100%;
+	height: auto;
+	margin-bottom:5px;
 }
 /* Demo Page Styles: Layout */
 .container {
-  position: relative;
-  width: 96%;
-  margin: 0 auto;
-  text-align: center;
+	position: relative;
+	width: 96%;
+	margin: 0 auto;
+	text-align: center;
 }
 section {
-  margin: 20px auto;
+	margin: 20px auto;
+}
+/* Responsive styles */
+@media (min-width: 760px) {
+	.breakpoint {
+		max-width: 24%;
+	}
+}
+@media (max-width: 760px) {
+	.home-img img{
+		width:100%;
+	}
+	.home-sections img{
+		float:left;
+		margin:5%;
+		width:90%;
+	}
+	.team{
+		width:45%;
+		padding:2.5%;
+	}
+	.team p{
+		padding:50px;
+		height:50px;
+	}
+	.team img{
+		width:90%;
+	}
+	.stadium-mini{
+		width:45%;
+		padding:2.5%;
+	}
+	.stadium-desc{
+		width:96%;
+		text-align:center;
+		padding:2%;
+	}
+	header{
+		text-align:center;
+	}
+	header img{
+		min-width:10%;
+		max-width:20%;
+	}
+	h1{
+		font-size:28px;
+	}
+	h2{
+		font-size:18px;
+	}
+	h3{
+		font-size:12px;
+	}
+	
+}
+@media (max-width: 460px) {
+	.team{
+		width:90%;
+		padding-left:5%;
+		padding-right:5%;
+		padding-top:1%;
+		padding-bottom:2.5%;
+	}
+	.team p{
+		padding-top:30px;
+		height:0;
+	}
+	.team img{
+		width:90%;
+	}
+	.stadium-mini{
+		width:90%;
+		padding:5%;
+	}
+	.stadium-desc{
+		margin-bottom:20px;
+		height:30px;
+	}
+	footer{
+		margin-top:40px;
+	}
 }
