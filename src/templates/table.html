@@ -42,7 +42,7 @@
 		{% for item in results|sort(attribute='position', reverse=False) %}
 			<tr>
 				<td class="numbers">{{ item.position }}</td>
-				<td><a href=/{{ item.team_name }}>{{ item.full_name }}</a></td>
+				<td><a href=/Team/{{ item.team_name }}>{{ item.full_name }}</a></td>
 				<td>12</td>
 				<td class="numbers">{{ item.w }}</td>
 				<td class="numbers">{{ item.d }}</td>

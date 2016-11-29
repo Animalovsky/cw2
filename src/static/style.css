@@ -153,8 +153,8 @@ header h1{
 	float:left;
 }
 .team-section2 img{
-	max-width:60%;
-	min-width:40%;
+	max-width:80%;
+	min-width:60%;
 }
 .team-section3{
 	width:33%;
@@ -388,6 +388,31 @@ section {
 		text-align:center;
 		padding:2%;
 	}
+	.team-section1{
+		width:90%;
+		text-align:center;
+		float:none;
+		margin-top:20px;
+		padding:5%;
+	}
+	.team-section2{
+		width:60%;
+		text-align:center;
+		float:none;
+		padding-left:20%;
+		padding-right:20%;
+	}
+	.team-section2 img{
+		max-width:80%;
+		min-width:60%;
+	}
+	.team-section3{
+		width:90%;
+		text-align:center;
+		float:none;
+		margin-top:20px;
+		padding:5%;
+	}
 	header{
 		text-align:center;
 	}
@@ -428,6 +453,9 @@ section {
 	.stadium-desc{
 		margin-bottom:20px;
 		height:30px;
+	}
+	.about{
+		padding-bottom:150px;
 	}
 	footer{
 		margin-top:40px;

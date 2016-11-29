@@ -20,7 +20,9 @@
 	</header>
 <!--Heading-->	
 	<div class="heading">
-		<h1>{{ team_name }}</h1>
+	{% for team in team if team.team_name == team_name %}
+		<h1>{{ team.full_name }}</h1>
+	{% endfor %}
 	</div>
 	
 <!--This loop displays team information-->
@@ -39,7 +41,6 @@
 			<h3>Manager: {{ team.manager }}</h3>
 		</div>
 	{% endfor %}
-	
 <!--This loop displays team about information-->	
 	<div class="about">
 		<h2></h2>
