@@ -27,23 +27,74 @@
 	<table class="pl-table">
 	<!--Table Labels-->
 		<tr>
-			<th>#</th>
-			<th>TEAM</th>
-			<th>P</th>
-			<th>W</th>
-			<th>D</th>
-			<th>L</th>
-			<th>F</th>
-			<th>A</th>
-			<th>GD</th>
-			<th>PTS</th>
+			<th>
+				<div class="tooltip">
+					<span class="tooltiptext">Position in the league</span>
+					#
+				</div>
+			</th>
+			<th>
+				<div class="tooltip">
+					<span class="tooltiptext">Team</span>
+					Team
+				</div>
+			</th>
+			<th>
+				<div class="tooltip">
+					<span class="tooltiptext">No. of matches played</span>
+					P
+				</div>
+			</th>
+			<th>
+				<div class="tooltip">
+					<span class="tooltiptext">No. of wins</span>
+					W
+				</div>
+			</th>
+			<th>
+				<div class="tooltip">
+					<span class="tooltiptext">No. of draws</span>
+					D
+				</div>
+			</th>
+			<th>
+				<div class="tooltip">
+					<span class="tooltiptext">No. of losses</span>
+					L
+				</div>
+			</th>
+			<th>
+				<div class="tooltip">
+					<span class="tooltiptext">Goals scored</span>
+					F
+				</div>
+			</th>
+			<th>
+				<div class="tooltip">
+					<span class="tooltiptext">Goals against</span>
+					A
+				</div>
+			</th>
+			<th>
+				<div class="tooltip">
+					<span class="tooltiptext">Goal Difference</span>
+					GD
+				</div>
+			</th>
+			<th>
+				<div class="tooltip">
+					<span class="tooltiptext">Points</span>
+					PTS
+				</div>
+			</th>
+			
 		</tr>
 		<!--Looping through JSON data-->
 		{% for item in results|sort(attribute='position', reverse=False) %}
 			<tr>
 				<td class="numbers">{{ item.position }}</td>
 				<td><a href=/Team/{{ item.team_name }}>{{ item.full_name }}</a></td>
-				<td>12</td>
+				<td>13</td>
 				<td class="numbers">{{ item.w }}</td>
 				<td class="numbers">{{ item.d }}</td>
 				<td class="numbers">{{ item.l }}</td>
